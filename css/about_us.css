@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    overflow-x:hidden;
+    /* background: url(../images/beach_bg.jpg) no-repeat center center fixed; */
+    background-color: #09b6f969;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52),
+    rgb(42 90 113 / 73%)), 
+    url(../images/beach_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+ }
+section.about-us{
+    padding:3rem;
+}
+/*Description Section*/
+section.description{
+    padding: 2em;
+    text-align:center;
+}
+section.description > div.header-desc{
+    padding-top:2rem;
+    font-size:2.5em;
+    -webkit-text-stroke: 2px black;
+}
+section.description > div.sub-desc{
+    font-size:1.5em;
+    padding-top:1rem;
+    -webkit-text-stroke: 2px black;
+}
+/*Team Section Single*/
+section.team{
+    height:100%;
+    width:100%;
+}
+section.team > .member-block{
+    display:flex;
+    margin:1rem;
+}
+section.team > .member-block > .sub-block-card,
+section.team > .member-block > .sub-block-desc{
+    height:100%;
+    width:50%;
+    text-align:center;
+    padding:2rem 0rem;
+    border-radius:1rem;
+    margin:1rem;
+}
+section.team > .member-block > .sub-block-card > card > div.name {
+    font-size: 1em;
+    -webkit-text-stroke: 1px black;
+}
+section.team > .member-block > .sub-block-desc{
+    background-color: #09b6f969;
+}
+section.team > .member-block > .sub-block-desc > .role{
+    font-size:1.5rem;
+    padding-bottom:0.8rem;
+}
+section.team > .member-block > .sub-block-desc > .role-desc{
+    font-size:1rem;
+    padding:0rem 1rem;
+}
+/*Team Group Section*/
+section.team > .member-block-group{
+    display:flex;
+    margin:1rem;
+}
+section.team > .member-block-group > .card-group{
+    height:100%;
+    width:100%;
+    padding:2rem 0rem;
+    border-radius:1rem;
+    margin:1rem;
+    background-color: #09b6f969; 
+    display:flex;
+    flex-wrap: wrap;   
+    align-items: center;
+    justify-content: center;
+    
+}
+section.team > .member-block-group > .card-group > div.card{
+    padding:0rem 2rem;
+}
+section.team > .member-block-group > .card-group > div.card > div.name{
+    text-align: center;
+}
+/*Animation*/
+@keyframes spinAnim {
+    from { transform: rotateY(0deg) }
+    to { transform: rotateY(360deg) }
+}
+.spinAnim{
+    animation: spinAnim 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+.spinAnim:hover{
+    animation: spinAnim 1s;
+}
+/*Footer*/
+footer{
+   text-align: center;
+   background-color: #00bfff;
+   padding:2rem;    
+   border-top-left-radius: 60%;
+   border-top-right-radius: 60%;
+}
+footer > section.socials{
+    font-size:3rem;
+    display:flex;
+    flex-wrap: wrap;   
+    align-items: center;
+    justify-content: center;
+    margin-top:2rem;
+}
+footer > section.socials > a {
+  margin:0rem 3rem;
+}
+footer > section.socials > a:hover {
+  color:#f5f5f5
+}
+footer > section.links{
+    font-size:1.5rem;
+    display:flex;
+    flex-wrap: wrap;   
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+}
+footer > section.links > a {
+  margin:0rem 3rem;
+  text-decoration:none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-right: 2px solid #19127d;
+  border-left: 2px solid #19127d;
+}
+footer > section.links > a:hover {
+  color:#f5f5f5
+}
+footer > section.rights-res{
+    font-size:1rem;
+    display:flex;
+    flex-wrap: wrap;   
+    align-items: center;
+    justify-content: center;
+    margin-top:2.5rem;
+}
