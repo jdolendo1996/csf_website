@@ -1,5 +1,17 @@
+// Get RAW DOM 
+const main       = document.getElementById("menu_bar");
+
+// Get the offset positions
+const offset_main      = main.offsetTop;
+
 // Scroll Action to make sticky navbar and change active state
 $( window ).scroll(function() {
+
+    if (window.pageYOffset > offset_main) {
+		$('#menu_bar').addClass('sticky-navbar');
+	} else {
+		$('#menu_bar').removeClass('sticky-navbar');
+	}
 
 	 // If element is scrolled into view, do actions
 	$('.animate__animated').each(function() {
@@ -42,3 +54,4 @@ const isScrolledIntoView = (elem) => {
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+
